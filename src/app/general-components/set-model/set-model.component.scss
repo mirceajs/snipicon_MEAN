@@ -1,0 +1,107 @@
+
+.loadergif{
+    margin-left:80px;
+}
+
+input[type="color"]
+{
+  
+    border: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden !important;
+    width: 75px !important;
+    height: 25px !important;
+    display: unset;
+    margin-bottom: -9px !important;
+	
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+.projectHeader span{
+        vertical-align: middle;
+}
+  
+:host ::ng-deep .mat-form-field-infix
+{
+    width:240px !important;
+}
+.nomargin{
+    margin:0px !important;
+    padding: 0px !important;
+}
+
+.projectSetting{
+    background-color: #D4E1EC;
+    height : 35px;
+    border-bottom: 2px solid #99BBDD;
+}
+
+:host ::ng-deep .mat-form-field-underline
+{
+background-color:  #d4e1ec;
+}
+
+:host ::ng-deep .mat-form-field-underline {
+height:2px !important;
+}
+
+.setHeader{
+
+    background-color: #D4E1EC;
+    height : 35px;
+    border-bottom: 2px solid #99BBDD;
+   
+}
+
+.tabSelected{
+   
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.setHeader span {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: -webkit-baseline-middle;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+}
+
+.tab{
+    margin-top:20px
+}
+.dashed-border{
+ border-top: 1px dashed #99BBDD;
+ margin-bottom:10px;
+}
+.margin-zero{
+    padding : 0px !important;
+    margin: 10px 0px 0px 0px !important;
+}
+:host ::ng-deep .mat-slider-horizontal
+{
+    width:240px;
+}
+:host ::ng-deep .mat-slider-thumb, :host ::ng-deep .mat-slider-thumb-label{
+    border-radius: 0 ;
+}
+:host ::ng-deep .mat-slider-thumb, :host ::ng-deep .mat-slider-thumb-label,:host ::ng-deep .mat-slider-track-fill 
+{
+    background-color: black;
+}
+
+:host ::ng-deep .mat-slider-thumb-label-text{
+    color:white;
+}

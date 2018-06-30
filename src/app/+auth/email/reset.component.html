@@ -1,0 +1,73 @@
+<div id="login" class="login-container">
+    <div class="login-header">
+        Reset Password<br> <img class="snipicon64" src="/assets/media/email-signinup.svg">
+        <!-- will change based on the page it is in -->
+    </div>
+    <div class="login-body container">
+        <div class="login-flow">
+            <!-- Start form -->
+            <ng-container *ngIf="!resetPassword; else elseTemplate">
+                <form novalidate (ngSubmit)="reset(form.value)" [formGroup]="form">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email" formControlName="email" type="email">
+                        <div class="error" *ngIf="form.get('email').touched && form.get('email').hasError('required')">Email field is required</div>
+                        <div class="error" *ngIf="form.get( 'email').dirty && form.get( 'email').hasError( 'email') ">Invalid email format</div>
+                        <div class="error" *ngIf="form.get( 'email').hasError( 'remote') ">{{ form.get( 'email').getError('remote') }}</div>
+                    </div>
+                    <div class="row">
+                          <div class="col align-self-start">
+                            <button class="btn btn-primary pull-xs-right" (click)="return()" >Back</button>
+                        </div>
+
+                        <div class="col align-self-end">
+                            <button class="btn btn-primary pull-xs-right" type="submit" [disabled]="form.invalid">Next</button>
+                        </div>
+                    </div>
+                </form>
+            </ng-container>
+            <ng-template class="updateForm" #elseTemplate>
+           <span>Please enter the verification code sent to <strong>{{ form.get('email').value }}</strong> and new password</span>
+           <form class="example-form" [formGroup]="updatePassword" (ngSubmit)="updateData(updatePassword.value)">
+           <mat-form-field class="example-full-width">
+           <input type="text" matInput placeholder="Verification code" formControlName="verificationcode">
+           <mat-error *ngIf="updatePassword.get('verificationcode').hasError('required')">
+           Verification code <strong>required</strong>
+          </mat-error>
+          </mat-form-field>
+           <mat-form-field class="example-full-width">
+           <input type="email" matInput placeholder="Email" formControlName="email">
+           <mat-error *ngIf="updatePassword.get('email').hasError('email') && !updatePassword.get('email').hasError('required')">
+           Please enter a valid email address
+           </mat-error>
+          <mat-error *ngIf="updatePassword.get('email').hasError('required')">
+           Email is <strong>required</strong>
+          </mat-error>
+          </mat-form-field>
+           <mat-form-field class="example-full-width">
+           <input type ="password" matInput placeholder="New Password" formControlName="password">
+           <mat-error *ngIf="updatePassword.get('password').hasError('minlength') && !updatePassword.get('password').hasError('required') && action =='signup'">
+           Password should be minimum 8 characters long
+           </mat-error>
+          <mat-error *ngIf="updatePassword.get('password').hasError('required')">
+           Password Field cannot be empty
+          </mat-error>
+          </mat-form-field>
+        <div class="row">
+            <div class="col" style="margin-bottom:20px">
+               <div class="col text-right ">
+                <button type="submit" class="btn btn-primary pull-xs-right" [disabled]="updatePassword.invalid">Reset</button>
+               </div>
+            </div>
+        </div>
+        </form>
+           
+           
+            </ng-template>
+        </div>
+        <hr>
+        <p class="text-center">By using application you agree to our<br>
+            <a href="#">Terms of service </a> &amp; <a href="#">Privacy policy</a>
+        </p>
+    </div>
+</div>

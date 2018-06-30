@@ -1,0 +1,102 @@
+/*styles for home content only*/
+
+.headline
+{
+    margin-top: 50px !important;
+}
+
+canvas { 
+    background-size: 10px 10px;
+    border : rgb(52, 157, 237,0.5) 2px solid;
+    background-image: linear-gradient(to right, rgb(66, 167, 244, 0.15) 1px, transparent 1px), linear-gradient(to bottom,rgb(52, 157, 237,0.15) 1px, transparent 1px);
+}
+
+.presetpallet
+{
+    width:15px;
+    height:10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.margin25{
+ margin-left:25px;
+ margin-right:25px;
+}
+
+.loadergif
+{
+    margin:10px;
+}
+
+.head{
+    margin:5px;
+}
+
+.head > .snipicon-copy-upload
+{
+    width: 72px !important;
+    height: 72px !important;
+}
+.snipicon-copy-upload
+{
+    width:36px !important;
+    height:36px !important;
+}
+.search-result-container figure {
+    height: 68px;
+    width: 66px;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+
+.search-result-container{
+    background: none;
+}
+
+button .btn-primary{
+    margin-left:20px !important;
+}
+
+input[type="color"]
+{
+  
+    border: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    overflow: hidden !important;
+    width: 100px !important;
+    height: 25px !important;
+    display: unset;
+    margin-bottom: -9px !important;
+    cursor: pointer;
+	
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+    }
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+figure {
+    cursor: pointer;
+}
+.pallet 
+{
+    margin-top:10px;
+    position: relative;
+}
+.pallet span
+{
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    font-size: 14px;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+}

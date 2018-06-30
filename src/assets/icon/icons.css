@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* Snipicons */
+
+/*Deffs 18px */
+
+[class^="snipicon-"], [class*=" snipicon-"] {display: inline-block;width: 18px;height: 18px;line-height: 20px;background-image: none!important;}
+
+/* Sizes */
+
+.snipicon16 {height: 16px;width: 16px;line-height: 16px;}
+.snipicon24 { height: 24px; width: 24px; }
+.snipicon32 { height: 32px; width: 32px; }
+.snipicon48 { height: 48px; width: 48px; }
+.snipicon64 { height: 64px; width: 64px; }
+.snipicon80 {height: 80px;width: 80px;}
+.snipicon96 { height: 96px; width: 96px; }
+.snipicon128 { height: 128px; width: 128px; }
+
+/* Icons  */
+/*.snipicon-:before					{ content: url(.svg) }
+.snipicon-:hover::before 			{ content: url(-hover.svg) }
+.snipicon-:before					{ content: url(.svg) }
+.snipicon-:hover::before 			{ content: url(-hover.svg) }
+.snipicon-:before					{ content: url(.svg) }
+.snipicon-:hover::before 			{ content: url(-hover.svg) }
+.snipicon-:before					{ content: url(.svg) }
+.snipicon-:hover::before 			{ content: url(-hover.svg) }
+
+
+
+
+
+
+.snipicon-:before					{ content: url(.svg) }
+.snipicon-:before					{ content: url(.svg) }
+.snipicon-:before					{ content: url(.svg) }
+
+
+
+*/
+
+
+
+.snipicon-add-collection:before			{ content: url(add-collection.svg) }
+.snipicon-add-collection:hover::before 	{ content: url(add-collection-hover.svg) }
+.snipicon-assets-active:before			{ content: url(assets-active.svg) }
+.snipicon-assets-all:before				{ content: url(assets-all.svg) }
+.snipicon-assets-inspection:before		{ content: url(assets-inspection.svg) }
+.snipicon-assets-notsubmited:before		{ content: url(assets-notsubmited.svg) }
+.snipicon-assets-rejected:before		{ content: url(assets-rejected.svg) }
+.snipicon-attribution-link:before		{ content: url(attribution-link.svg) }
+.snipicon-attribution-link:hover::before { content: url(attribution-link-hover.svg) }
+.snipicon-bin-red:before				{ content: url(bin-red.svg) }
+.snipicon-bin:before					{ content: url(bin.svg) }
+.snipicon-bin:hover::before 			{ content: url(bin-hover.svg) }
+.snipicon-chat-wait:before				{ content: url(chat-wait.svg) }
+.snipicon-chat-wait:hover::before 		{ content: url(chat-wait-hover.svg) }
+.snipicon-close-thin:before				{ content: url(close-thin.svg) }
+.snipicon-close-thin:hover::before 		{ content: url(close-thin-hover.svg) }
+.snipicon-collections:before			{ content: url(collections.svg) }
+.snipicon-collections:hover::before 	{ content: url(collections-hover.svg) }
+.snipicon-contributor:before			{ content: url(contributor.svg) }
+.snipicon-contributor:hover::before 	{ content: url(contributor-hover.svg) }
+.snipicon-docs:before					{ content: url(docs.svg) }
+.snipicon-docs:hover::before 			{ content: url(docs-hover.svg) }
+.snipicon-download-drive:before			{ content: url(download-drive.svg) }
+.snipicon-edit-options:before			{ content: url(edit-options.svg) }
+.snipicon-edit-options:hover::before 	{ content: url(edit-options-hover.svg) }
+.snipicon-download-drive:hover::before 	{ content: url(download-drive-hover.svg) }
+.snipicon-foundry:before				{ content: url(foundry.svg) }
+.snipicon-foundry:hover::before 		{ content: url(foundry-hover.svg) }
+.snipicon-import:before					{ content: url(import.svg) }
+.snipicon-import:hover::before 			{ content: url(import-hover.svg) }
+.snipicon-license:before				{ content: url(license.svg) }
+.snipicon-license:hover::before 		{ content: url(license-hover.svg) }
+.snipicon-navbars:before				{ content: url(navbars.svg) }
+.snipicon-navbars:hover::before			{ content: url(navbars-hover.svg) }
+.snipicon-palette-edit:before			{ content: url(palette-edit.svg) }
+.snipicon-price-tag-dlr:before			{ content: url(price-tag-dlr.svg) }
+.snipicon-price-tag-dlr:hover::before 	{ content: url(price-tag-dlr-hover.svg) }
+.snipicon-search:before					{ content: url(search.svg) }
+.snipicon-search:hover::before 			{ content: url(search-hover.svg) }
+.snipicon-search-result-tag:before		{ content: url(search-result-tag.svg) }
+.snipicon-stats:before 					{ content: url(stats.svg) }
+.snipicon-stats:hover::before 			{ content: url(stats-hover.svg) }
+.snipicon-stroke-width:before			{ content: url(stroke-width.svg) }
+.snipicon-style-filter:before			{ content: url(style-filer.svg) }
+.snipicon-svg-edit:before 				{ content: url(svg-edit.svg) }
+.snipicon-tag:before					{ content: url(tag.svg) }
+.snipicon-tag45:before					{ content: url(tag45.svg) }
+.snipicon-terms-scale:before			{ content: url(terms-scale.svg) }
+.snipicon-terms-scale:hover::before 	{ content: url(terms-scale-hover.svg) }
+.snipicon-toolbar-icon-size:before		{ content: url(toolbar-icon-size.svg) }
+.snipicon-toolbar-icon-size:hover::before { content: url(toolbar-icon-size-hover.svg) }
+.snipicon-toolbar-style-filter:before	{ content: url(toolbar-style-filter.svg) }
+.snipicon-toolbar-style-filter:hover::before { content: url(toolbar-style-filter-hover.svg) }
+.snipicon-toolbar-style-screen:before	{ content: url(toolbar-style-screen.svg) }
+.snipicon-toolbar-style-screen:hover::before { content: url(toolbar-style-screen-hover.svg) }
+.snipicon-user:before					{ content: url(user.svg) }
+.snipicon-user:hover::before 			{ content: url(user-hover.svg) }
+.snipicon-vault:before					{ content: url(vault.svg) }
+.snipicon-vault:hover::before 			{ content: url(vault-hover.svg) }
+.snipicon-vault-dash:before				{ content: url(vault-dash.svg) }
+.snipicon-vault-dash:hover::before 		{ content: url(vault-dash-hover.svg) }
+
+
+/*Socials*/
+
+
+.icon-behance-footer:before {content:url(behance-footer.svg)}         .icon-behance-footer {background:#E5E5E5;}      .icon-behance-footer:hover {background:#777777;}
+.icon-blogger-footer:before {content:url(blogger-footer.svg)}         .icon-blogger-footer {background:#E5E5E5;}      .icon-blogger-footer:hover {background:#FC8A38;}
+.icon-facebook-footer:before {content:url(facebook-footer.svg)}       .icon-facebook-footer {background:#E5E5E5;}     .icon-facebook-footer:hover {background:#3C5A99;}
+.icon-google-plus-footer:before {content:url(google-plus-footer.svg)} .icon-google-plus-footer {background:#E5E5E5;}  .icon-google-plus-footer:hover {background:#DC4A38;}
+.icon-tumblr-footer:before {content:url(tumblr-footer.svg)}           .icon-tumblr-footer {background:#E5E5E5;}       .icon-tumblr-footer:hover {background:#6391b9;}
+.icon-twitter-footer:before {content:url(twitter-footer.svg)}         .icon-twitter-footer {background:#E5E5E5;}      .icon-twitter-footer:hover {background:#3AAAE1;}
+
+/*Footer icons */
+
+.snipicon-3:before 					{ content: url(search.svg) }
+.snipicon-4:before 					{ content: url(4.svg) }
+.snipicon-5:before 					{ content: url(5.svg) }

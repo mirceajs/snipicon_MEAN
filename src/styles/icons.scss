@@ -1,0 +1,473 @@
+@charset "utf-8";
+
+/* Snipicons */
+
+
+/*Deffs 18px */
+
+[class^="snipicon-"],
+[class*=" snipicon-"] {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    background-image: none!important;
+}
+
+
+/* Sizes */
+
+.snipicon16 {
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+}
+
+.snipicon24 {
+    height: 24px;
+    width: 24px;
+}
+
+.snipicon32 {
+    height: 32px;
+    width: 32px;
+}
+
+.snipicon48 {
+    height: 48px;
+    width: 48px;
+}
+
+.snipicon64 {
+    height: 64px;
+    width: 64px;
+}
+
+.snipicon80 {
+    height: 80px;
+    width: 80px;
+}
+
+.snipicon96 {
+    height: 96px;
+    width: 96px;
+}
+
+.snipicon128 {
+    height: 128px;
+    width: 128px;
+}
+
+
+/* Icons  */
+
+
+/*.snipicon-:before					{ content: url(/assets/icon/.svg) }
+.snipicon-:hover::before 			{ content: url(/assets/icon/-hover.svg) }
+.snipicon-:before					{ content: url(/assets/icon/.svg) }
+.snipicon-:hover::before 			{ content: url(/assets/icon/-hover.svg) }
+.snipicon-:before					{ content: url(/assets/icon/.svg) }
+.snipicon-:hover::before 			{ content: url(/assets/icon/-hover.svg) }
+.snipicon-:before					{ content: url(/assets/icon/.svg) }
+.snipicon-:hover::before 			{ content: url(/assets/icon/-hover.svg) }
+
+
+
+
+
+
+.snipicon-:before					{ content: url(/assets/icon/.svg) }
+.snipicon-:before					{ content: url(/assets/icon/.svg) }
+.snipicon-:before					{ content: url(/assets/icon/.svg) }
+
+
+
+*/
+
+.snipicon-add-collection:before {
+    content: url(/assets/icon/add-collection.svg)
+}
+
+.snipicon-add-collection:hover::before {
+    content: url(/assets/icon/add-collection-hover.svg)
+}
+
+.snipicon-assets-active:before {
+    content: url(/assets/icon/assets-active.svg)
+}
+
+.snipicon-assets-all:before {
+    content: url(/assets/icon/assets-all.svg)
+}
+
+.snipicon-assets-inspection:before {
+    content: url(/assets/icon/assets-inspection.svg)
+}
+
+.snipicon-assets-notsubmited:before {
+    content: url(/assets/icon/assets-notsubmited.svg)
+}
+
+.snipicon-assets-rejected:before {
+    content: url(/assets/icon/assets-rejected.svg)
+}
+
+.snipicon-attribution-link:before {
+    content: url(/assets/icon/attribution-link.svg)
+}
+
+.snipicon-attribution-link:hover::before {
+    content: url(/assets/icon/attribution-link-hover.svg)
+}
+
+.snipicon-bin-red:before {
+    content: url(/assets/icon/bin-red.svg)
+}
+
+.snipicon-bin:before {
+    content: url(/assets/icon/bin.svg)
+}
+
+.snipicon-bin:hover::before {
+    content: url(/assets/icon/bin-hover.svg)
+}
+
+.snipicon-chat-wait:before {
+    content: url(/assets/icon/chat-wait.svg)
+}
+
+.snipicon-chat-wait:hover::before {
+    content: url(/assets/icon/chat-wait-hover.svg)
+}
+
+.snipicon-close-thin:before {
+    content: url(/assets/icon/close-thin.svg)
+}
+
+.snipicon-close-thin:hover::before {
+    content: url(/assets/icon/close-thin-hover.svg)
+}
+
+.snipicon-collections:before {
+    content: url(/assets/icon/collections.svg)
+}
+
+.snipicon-collections:hover::before {
+    content: url(/assets/icon/collections-hover.svg)
+}
+
+.snipicon-contributor:before {
+    content: url(/assets/icon/contributor.svg)
+}
+
+.snipicon-contributor:hover::before {
+    content: url(/assets/icon/contributor-hover.svg)
+}
+
+.snipicon-docs:before {
+    content: url(/assets/icon/docs.svg)
+}
+
+.snipicon-docs:hover::before {
+    content: url(/assets/icon/docs-hover.svg)
+}
+
+.snipicon-download-drive:before {
+    content: url(/assets/icon/download-drive.svg)
+}
+
+.snipicon-edit-options:before {
+    content: url(/assets/icon/edit-options.svg)
+}
+
+.snipicon-edit-options:hover::before {
+    content: url(/assets/icon/edit-options-hover.svg)
+}
+
+.snipicon-download-drive:hover::before {
+    content: url(/assets/icon/download-drive-hover.svg)
+}
+
+.snipicon-foundry:before {
+    content: url(/assets/icon/foundry.svg)
+}
+
+.snipicon-foundry:hover::before {
+    content: url(/assets/icon/foundry-hover.svg)
+}
+
+.snipicon-import:before {
+    content: url(/assets/icon/import.svg)
+}
+
+.snipicon-import:hover::before {
+    content: url(/assets/icon/import-hover.svg)
+}
+
+.snipicon-license:before {
+    content: url(/assets/icon/license.svg)
+}
+
+.snipicon-license:hover::before {
+    content: url(/assets/icon/license-hover.svg)
+}
+
+.snipicon-navbars:before {
+    content: url(/assets/icon/navbars.svg)
+}
+
+.snipicon-navbars:hover::before {
+    content: url(/assets/icon/navbars-hover.svg)
+}
+
+.snipicon-palette-edit:before {
+    content: url(/assets/icon/palette-edit.svg)
+}
+
+.snipicon-price-tag-dlr:before {
+    content: url(/assets/icon/price-tag-dlr.svg)
+}
+
+.snipicon-price-tag-dlr:hover::before {
+    content: url(/assets/icon/price-tag-dlr-hover.svg)
+}
+
+.snipicon-search:before {
+    content: url(/assets/icon/search.svg)
+}
+
+.snipicon-search:hover::before {
+    content: url(/assets/icon/search-hover.svg)
+}
+
+.snipicon-search-result-tag:before {
+    content: url(/assets/icon/search-result-tag.svg)
+}
+
+.snipicon-stats:before {
+    content: url(/assets/icon/stats.svg)
+}
+
+.snipicon-stats:hover::before {
+    content: url(/assets/icon/stats-hover.svg)
+}
+
+.snipicon-stroke-width:before {
+    content: url(/assets/icon/stroke-width.svg)
+}
+
+.snipicon-style-filter:before {
+    content: url(/assets/icon/style-filer.svg)
+}
+
+.snipicon-svg-edit:before {
+    content: url(/assets/icon/svg-edit.svg)
+}
+.snipicon-settings {
+    content: url(/assets/icon/gear.svg)
+}
+.snipicon-deploy {
+    content: url(/assets/icon/rocket.svg)
+}
+.snipicon-cloud-download {
+    content: url(/assets/icon/cloud-download.svg)
+}
+.snipicon-pen-tip {
+    content: url(/assets/icon/pen-tip.svg)
+}
+.snipicon-fill {
+    content: url(/assets/icon/fill.svg)
+}
+.snipicon-gradient-stop {
+    content: url(/assets/icon/gradient-stop.svg)
+}
+.snipicon-zoom-in {
+    content: url(/assets/icon/zoom-in.svg)
+}
+.snipicon-zoom-out {
+    content: url(/assets/icon/zoom-out.svg)
+}
+.snipicon-copy-set {
+    content: url(/assets/icon/copy.svg)
+}
+.snipicon-copy-upload {
+    content: url(/assets/icon/cloud-upload.svg)
+}
+.snipicon-import {
+    content: url(/assets/icon/globe.svg)
+}
+
+.snipicon-saturation {
+    content: url(/assets/icon/saturation.svg)
+}
+
+.snipicon-lightness {
+    content: url(/assets/icon/lightness.svg)
+}
+
+.snipicon-gradient-step {
+    content: url(/assets/icon/gradient-step.svg)
+}
+
+.snipicon-tag:before {
+    content: url(/assets/icon/tag.svg)
+}
+.snipicon-icontag {
+    content: url(/assets/icon/tag.svg)
+}
+.snipicon-tag45:before {
+    content: url(/assets/icon/tag45.svg)
+}
+
+.snipicon-terms-scale:before {
+    content: url(/assets/icon/terms-scale.svg)
+}
+
+.snipicon-terms-scale:hover::before {
+    content: url(/assets/icon/terms-scale-hover.svg)
+}
+
+.snipicon-toolbar-icon-size:before {
+    content: url(/assets/icon/toolbar-icon-size.svg)
+}
+
+.snipicon-toolbar-icon-size:hover::before {
+    content: url(/assets/icon/toolbar-icon-size-hover.svg)
+}
+
+.snipicon-toolbar-style-filter:before {
+    content: url(/assets/icon/toolbar-style-filter.svg)
+}
+
+.snipicon-toolbar-style-filter:hover::before {
+    content: url(/assets/icon/toolbar-style-filter-hover.svg)
+}
+
+.snipicon-toolbar-style-screen:before {
+    content: url(/assets/icon/toolbar-style-screen.svg)
+}
+
+.snipicon-toolbar-style-screen:hover::before {
+    content: url(/assets/icon/toolbar-style-screen-hover.svg)
+}
+
+.snipicon-user:before {
+    content: url(/assets/icon/user.svg)
+}
+
+.snipicon-user:hover::before {
+    content: url(/assets/icon/user-hover.svg)
+}
+
+.snipicon-vault:before {
+    content: url(/assets/icon/vault.svg)
+}
+
+.snipicon-vault:hover::before {
+    content: url(/assets/icon/vault-hover.svg)
+}
+
+.snipicon-vault-dash:before {
+    content: url(/assets/icon/vault-dash.svg)
+}
+
+.snipicon-vault-dash:hover::before {
+    content: url(/assets/icon/vault-dash-hover.svg)
+}
+
+
+/*Socials*/
+
+.icon-behance-footer:before {
+    content: url(/assets/icon/behance-footer.svg)
+}
+
+.icon-behance-footer {
+    background: #E5E5E5;
+}
+
+.icon-behance-footer:hover {
+    background: #777777;
+}
+
+.icon-blogger-footer:before {
+    content: url(/assets/icon/blogger-footer.svg)
+}
+
+.icon-blogger-footer {
+    background: #E5E5E5;
+}
+
+.icon-blogger-footer:hover {
+    background: #FC8A38;
+}
+
+.icon-facebook-footer:before {
+    content: url(/assets/icon/facebook-footer.svg)
+}
+
+.icon-facebook-footer {
+    background: #E5E5E5;
+}
+
+.icon-facebook-footer:hover {
+    background: #3C5A99;
+}
+
+.snipicon-email {
+    content: url(/assets/media/email-signinup.svg)
+}
+
+.snipicon-google {
+    content: url(/assets/icon/google-g.svg)
+}
+.icon-google-plus-footer:before {
+    content: url(/assets/icon/google-plus-footer.svg)
+}
+
+.icon-google-plus-footer {
+    background: #E5E5E5;
+}
+
+.icon-google-plus-footer:hover {
+    background: #DC4A38;
+}
+
+.icon-tumblr-footer:before {
+    content: url(/assets/icon/tumblr-footer.svg)
+}
+
+.icon-tumblr-footer {
+    background: #E5E5E5;
+}
+
+.icon-tumblr-footer:hover {
+    background: #6391b9;
+}
+
+.icon-twitter-footer:before {
+    content: url(/assets/icon/twitter-footer.svg)
+}
+
+.icon-twitter-footer {
+    background: #E5E5E5;
+}
+
+.icon-twitter-footer:hover {
+    background: #3AAAE1;
+}
+
+
+/*Footer icons */
+
+.snipicon-3:before {
+    content: url(/assets/icon/search.svg)
+}
+
+.snipicon-4:before {
+    content: url(/assets/icon/4.svg)
+}
+
+.snipicon-5:before {
+    content: url(/assets/icon/5.svg)
+}

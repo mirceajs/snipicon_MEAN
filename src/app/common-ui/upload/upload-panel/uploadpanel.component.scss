@@ -1,0 +1,163 @@
+.nomargin
+{
+    margin : 0px !important;
+    padding : 0px !important;
+}
+ .uploadheader  .snipicon-close-thin
+ {
+    display: inline-block;
+    width: 15px !important;
+    height:15px !important;
+    line-height: 15px !important;
+    margin:10px !important;
+    background-image: none !important;
+ }
+
+ .preview-container
+ {
+     padding: 0px !important;
+ }
+ .uploadheader
+    {
+    //margin: 20px 0 0px;
+    border-top: 0px solid #F0F0F0;
+    background: #D4E1EC;
+    padding-top: 5px;
+    padding-left:5px;
+    }
+.form-control
+{
+        padding: .15rem .15rem !important;
+}
+
+.preview-sizedemo
+{
+    margin-top: 50px !important;
+}
+.uploadheader .row
+{
+    margin-bottom: -9px !important;
+}
+
+.iconListAdd
+{
+    display: inline-block;
+    border-right: 2px solid #d6d6d6;
+  
+}
+
+.btnAdd
+{
+    margin-top:20px;
+}
+.px-1{
+    vertical-align: top;
+    margin-left: 10px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+.iconHeader
+{
+    font-size:12px;
+}
+
+.uploadfooter{
+margin: 0 0 0px;
+    border-bottom: 2px solid #D4E1EC;
+    background: #F0F0F0;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+.uploadfooter
+{
+    margin-top:5px;
+}
+.preview-selector .previewstyle
+{
+    width:70px !important
+}
+
+.preview-sixpack ul{
+    margin-top:10px !important;
+}
+
+:host ::ng-deep .search-result-container figure {
+    height: 60px !important;
+    width: 60px !important;
+}
+:host ::ng-deep .img-ul {
+    width: 70px !important;
+    margin: 5px !important;
+    height: 90px !important;
+    margin-left:10px!important;
+    background-image: url('../../../../assets/icon/chat-wait.svg');
+    background-size: 50%;
+    border:none !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+:host ::ng-deep .img-ul-file-upload  {
+    margin: 0px;
+    padding: 0px  !important;
+}
+
+:host ::ng-deep .img-ul-container {
+    background-color: #f8f8f8 !important;
+    padding:0px !important;
+}
+
+:host ::ng-deep label.img-ul-button
+{
+    
+    display: none;
+        
+}
+/*:host ::ng-deep  .img-ul-image{
+
+    height: 90px;
+    display: block !important;
+}*/
+:host ::ng-deep .img-ul-image{
+    margin: 10px !important;
+    width: 50px !important;
+    height: 70px !important;
+}
+
+:host ::ng-deep .img-ul-x-mark , :host ::ng-deep .img-ul-drag-box-msg , :host ::ng-deep .img-ul-clear{
+    display: none !important;
+}
+
+.btn {
+    font-size: 11px;
+}
+
+.preview-sizedemo > ul {
+    padding-left:5px !important
+}
+
+ .preview
+ {
+    margin-right:5px;
+ }
+
+  .sixpack-preview-box {
+        width: 100%;
+        padding-left: 10px !important;
+        padding-top: 20px !important;
+      }
+
+ .graphictypes-selector
+      {
+        display: inline-block;
+        vertical-align: bottom;
+        text-align: center;
+      }
+
+      .loadergif
+      {
+          position : absolute !important;
+          margin-top: 50px !important;
+      }

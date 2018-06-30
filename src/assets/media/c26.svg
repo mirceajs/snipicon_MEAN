@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 500 500"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#303030;stroke-width:10}
+    .str4 {stroke:#606060;stroke-width:5}
+    .str1 {stroke:#303030;stroke-width:7.5;stroke-linecap:round}
+    .str2 {stroke:#ED2F00;stroke-width:7.5;stroke-linecap:round}
+    .str3 {stroke:#606060;stroke-width:5;stroke-linecap:round}
+    .fil2 {fill:none}
+    .fil3 {fill:#303030}
+    .fil5 {fill:#ED2F00}
+    .fil0 {fill:url(#id0)}
+    .fil1 {fill:url(#id1)}
+    .fil4 {fill:url(#id2)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="250" y1="60.801" x2="250" y2="439.199">
+   <stop offset="0" style="stop-opacity:1; stop-color:#D8D8D8"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#F2F2F2"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="278.999" y1="331" x2="221.001" y2="388.998">
+   <stop offset="0" style="stop-opacity:1; stop-color:#74C7FF"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#2EACFF"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="214.504" y1="119.507" x2="285.496" y2="160.493">
+   <stop offset="0" style="stop-opacity:1; stop-color:#FF6B46"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#ED2F00"/>
+  </linearGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0 str0" cx="250" cy="250" r="220"/>
+  <path class="fil1 str0" d="M285 325c20,19 20,51 0,70 -19,20 -51,20 -70,0 -20,-19 -20,-51 0,-70 19,-20 51,-20 70,0z"/>
+  <polyline class="fil2 str1" points="350,380 250,250 150,220 "/>
+  <line class="fil2 str2" x1="370" y1="180" x2="250" y2= "250" />
+  <path class="fil3" d="M259 365c-3,5 -9,6 -14,4 -5,-3 -6,-9 -4,-14 2,-4 6,-5 10,-5l10 -7 17 -11 -11 17 -7 10c0,2 0,4 -1,6z"/>
+  <path class="fil2 str3" d="M45 250l25 0m360 0l25 0m-205 205l0 -25m0 -360l0 -25m-178 308l22 -13m312 -180l22 -12m-281 280l13 -22m180 -312l12 -22m0 356l-12 -22m-180 -312l-13 -22m281 281l-22 -13m-312 -180l-22 -12"/>
+  <path class="fil4 str0" d="M207 115c14,-24 44,-32 68,-18 24,14 32,44 18,68 -14,24 -44,32 -68,18 -24,-14 -32,-44 -18,-68z"/>
+  <path class="fil3" d="M253 130c5,2 8,7 7,13 -2,5 -7,8 -13,7 -4,-1 -6,-5 -7,-8l-9 -9 -16 -13 20 7 11 4c2,-1 4,-1 7,-1z"/>
+  <circle class="fil5" cx="250" cy="250" r="13"/>
+  <circle class="fil2 str4" cx="250" cy="250" r="205"/>
+ </g>
+</svg>

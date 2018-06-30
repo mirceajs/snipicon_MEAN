@@ -1,0 +1,50 @@
+<div class="projectHeader row"> 
+  <div class="col-md-10">
+<span><i class="snipicon-collections"></i></span>  
+<mat-form-field>
+  <mat-select (change)="projectChanged()" placeholder="select a project" [(ngModel)]="selectProj">
+    <mat-option  *ngFor="let project of ProjectList" [value]="project.ID">
+      {{ project.ProjectName }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<span class="span-separator"></span>
+<span (click)="createProject()"><i class="snipicon-settings"></i></span> 
+<span><i class="snipicon-deploy"></i></span>  
+<span><i class="snipicon-cloud-download"></i></span>  
+</div>
+<div class="col-md-2 newset" (click)="addnewSet()"><span>NEW SET</span>
+    </div>
+</div>
+<div class="main" style="margin-top:-5px">
+     <div *ngIf="loading" class="col loadergif">
+        <div class="d-flex justify-content-center">
+          <mat-spinner [strokeWidth]="5" [diameter]="80"></mat-spinner>
+          </div>
+          </div>
+<mat-accordion *ngFor ="let set of setItems; let i =index">
+  <mat-expansion-panel   #expPanelsearchC [expanded]="set.status=='opened'? true : false" (click)="clicked($event)" (closed)="panelClosed(set.set.ID,$event)" (opened)="panelOpened(set.set.ID)" class="mt-2">
+    <mat-expansion-panel-header [ngClass]="expPanelsearchC.expanded ? 'accordionExpanded' :'accordionStyle'" [collapsedHeight]="'40px'" [expandedHeight]="'30px'">
+      <mat-panel-title>
+        <div class="col panelheader" (click)="panelClicked(expPanelsearchC.expanded,$event)" >
+        <div style="font-size:12px" class="float-left mt-1"><span> <b> {{set.set.Name}}</b> </span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="type"> {{set.set.Type}}</span> </div>
+       <div class="float-right" [ngClass]="expPanelsearchC.expanded ?'panelpropOpend' :'panelprop'" ><span> PSEUDOSTATES </span><span>   SHOW NAMES </span><span>  SET OPTIONS
+         </span>
+       </div>
+      </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="search-result-container" [ngClass]="set.set.ID  ? getClass(set.set.ID):''" style="min-height:60px">
+         <figure class="btn1">
+           <div class ="uploadbtn" (click)="addIcon(set.set)">ADD
+        </div>
+         </figure>
+          <ng-container   *ngFor ="let ic of set.Icons; let i = index">
+            <figure>
+              <div  [innerHTML]="transformHTML(ic.source)"></div>
+            </figure>
+          </ng-container>
+      </div>
+      </mat-expansion-panel>
+</mat-accordion>
+  </div>

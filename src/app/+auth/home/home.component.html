@@ -1,0 +1,37 @@
+<div id="login" class="login-container">
+    <div class="login-body ">
+        <div class="login-choice-container">
+            <h4>sign-in or join using any of the following services</h4>
+            <div class="login-button">
+                <a (click)="signInWithGoogle()">
+                    <img src="/assets/media/google-g.svg"><span>Google</span></a>
+            </div>
+            <!-- <div class="login-button">
+                <a href="signin-step1.html">
+                    <img src="/assets/media/microsoft.svg"><span>Microsoft</span></a>
+            </div> -->
+            <div class="login-button">
+                <a (click)="signInWithFB()">
+                    <img src="/assets/media/facebook.svg"><span>Facebook</span></a>
+            </div>
+            <!-- <div class="login-button">
+                <a href="signin-step1.html">
+                    <img src="/assets/media/twitter.svg"><span>Twitter</span></a>
+            </div> -->
+            <div class="login-button">
+                <a [routerLink]="['/auth/signin']">
+                    <img src="/assets/media/email-signinup.svg"><span>Email</span></a>
+            </div>
+
+            <p>By using application you agree to our<br><a href="#">Terms of service </a> &amp; <a href="#">Privacy policy</a></p>
+            <hr>
+            <p class="small">Before registering please note that the site is under construction and at this point we <br> offer VERY LIMITED functionality. Currently, the main purpose of registration is, <br> to be kept updated with upcoming application features and important
+                updates.
+            </p>
+
+        </div>
+        <div class="row justify-content-center" style="padding:20px">
+        <img src="/assets/media/login-mechanics.svg" class="img-fluid">
+        </div>
+    </div>
+</div>

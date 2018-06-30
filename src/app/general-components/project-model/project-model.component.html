@@ -1,0 +1,52 @@
+<div class="projectPanel">
+<div *ngIf="data.details" class="projectSetting row">
+    <span><i class="snipicon-add-collection"></i></span>
+    <span style="margin-top:-3px">Project settings</span>
+    </div>
+<div *ngIf="!data.details" class="projectHeader row">
+<div class="col-md-10">
+<span><i class="snipicon-add-collection"></i></span>
+<span>New Project</span>
+</div>
+<div class="col-md-2">
+     <span (click)="closePanel()"><i class="snipicon-close-thin aside-toggle"></i></span>
+</div>
+</div>
+<div class="col-md-12 ">
+     <form class="project-model" [formGroup]="form" (ngSubmit)="save()">
+          <mat-form-field class="example-full-width">
+       <input type="text" matInput placeholder="Project name"  formControlName="project">
+          </mat-form-field>
+     </form>
+   
+</div>
+<div style="margin-top:30px">
+</div>
+<div class="col-md-12 row dashed-border" style="margin-left:0px">
+      <div class="col-md-12 mpalette">
+         <span><i class="snipicon-palette-edit"></i></span><span>MASTERPALETTE</span>
+  
+      </div>
+      <div class="col-md-3 nomargin" style="margin-top:-10px !important;margin-left:-2px !important" *ngFor="let color of colorStops;let index = index">
+       
+            <input type="color" (ngModelChange)="colorChanged($event,index)" [ngStyle]="{'background-color':color}" [(ngModel)]="colorStops[index]" value="{{color}}">
+         <br>
+          <div *ngFor="let g of palletGrad[index];let i = index" [ngStyle]="{'background-color':rgb(g.r,g.g,g.b)}" style="width:3.5px;height:15px;display:inline-block;" >
+            </div>
+                   
+           
+      </div>
+    </div>
+<div style="margin-top:80px">
+</div> 
+ <div *ngIf="loading" class="col loadergif">
+        <div class="col-md-12 justify-content-center">
+          <mat-spinner [strokeWidth]="5" [diameter]="40"></mat-spinner>
+          </div>
+          </div>    
+<div *ngIf="!data.details" class="pull-right col-md-9">
+   
+<button (click)="closePanel()" class="btn btn-sm btn-default">CANCEL</button>
+<button class="btn btn-sm btn-success" (click)="save()" >CREATE & SAVE</button>
+</div>
+</div>

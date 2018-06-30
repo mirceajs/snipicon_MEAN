@@ -1,0 +1,7 @@
+     <input type="text" [ngClass]="isloading ? 'loadinggif' :''"  (keyup.enter) ="search($event)" placeholder="Start your search here" aria-label="icon searchbox" (keyup)="searchTextField($event.target.value)" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete">
+      <mat-option (onSelectionChange)="search($event)" *ngFor="let option of filteredOptions | async" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+ 

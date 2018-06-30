@@ -1,0 +1,79 @@
+<div class="projectPanel" #setpanel>
+<div class="setHeader row">
+    <div class="col-md-4">
+    <label>Find icons</label>
+    </div>
+    <div class="col-md-8 pull-right">
+    <span (click)="setSelection(0)" [ngClass]="selectedIndex==0 ? 'tabSelected' :''" ><i class="snipicon-search"></i></span>
+    <span (click)="setSelection(1)" [ngClass]="selectedIndex==1 ? 'tabSelected' :''" ><i class="snipicon-vault"></i></span>
+	<span (click)="setSelection(2)" [ngClass]="selectedIndex==2 ? 'tabSelected' :''" ><i class="snipicon-import"></i></span>
+	<span (click)="setSelection(3)" [ngClass]="selectedIndex==3 ? 'tabSelected' :''" ><i class="snipicon-svg-edit"></i></span>
+    </div>
+    </div>
+<div #tab1 class="tab" *ngIf="selectedIndex==0">
+<div class="col-md-12 row">
+    <div class="col-md-8">
+    <icon-search [isSetIcon]="true"  (searchText)="searchTextVal($event)"></icon-search></div>
+    <div class="col-md-4 nomargin">
+     <form class="example-form" [formGroup]="form">   
+     <mat-form-field class="graphicType"  >
+          <mat-select (change)="graphTypeselected()" placeholder="select a project" formControlName="type">
+           <mat-option *ngFor="let type of SetTypes" [value]="type">
+                                     {{ type }}
+           </mat-option>
+           </mat-select>
+          </mat-form-field>
+     </form>
+        </div>
+ <div class="search-result-container">
+  <ng-container   *ngFor ="let ic of IconList; let i = index">
+  <figure [ngClass]="i==selectedindex ? 'activeiconbox' :''" (click)="iconClicked(ic,i)">
+  <div  [innerHTML]="transformHTML(ic.source)">
+ </div>
+
+  </figure>
+
+  <!--<search-selection *ngIf="i==selectedindex" #searchSelection></search-selection>-->
+  <div *ngIf="i==selectedindex" class="preview-container" #panel>
+    <div class="preview-header">{{selectedIcon.name}}
+        </div>  
+    <div class="preview-body">
+          <div class ="uploadbtn float-right" (click)="addIcon(ic)">ADD TO SET </div>
+        <div class="preview-sizedemo">
+            <ul>
+                <li *ngFor="let szclass of icnSizes" class="preview preview-selector">
+                 <img  [src]="transform(selectedIcon.source)" [class]="szclass">
+               </li>
+            </ul>
+          </div>
+</div>
+        <div class="preview-footer">
+            <span *ngFor ="let tag of selectedIcon.tags ">{{tag}}</span>
+            </div>
+</div>
+ 
+  </ng-container>
+
+  </div>
+
+</div>
+<div style="margin-top:40px">
+</div>
+<div style="margin-top:80px">
+</div> 
+ <div *ngIf="loading" class="col loadergif">
+        <div class="col-md-12 justify-content-center">
+          <mat-spinner [strokeWidth]="5" [diameter]="40"></mat-spinner>
+          </div>
+          </div>    
+</div>
+</div>
+<div #tab2 class="tab" *ngIf="selectedIndex==1" style="margin-left:5px">
+    <div class="col-md-12 row">
+          
+    This is second vault....
+    </div>
+    </div>
+<footer>
+       
+</footer>

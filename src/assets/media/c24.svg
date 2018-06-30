@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100%" height="100%" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 500 500"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+
+    .str1 {stroke:#303030;stroke-width:2.5}
+    .str2 {stroke:#505050;stroke-width:2.5}
+    .str3 {stroke:#505050;stroke-width:5;stroke-linecap:round}
+    .fil6 {fill:none}
+    .fil12 {fill:#303030}
+    .fil9 {fill:#404040}
+    .fil8 {fill:#686868}
+    .fil7 {fill:#BEBEBE}
+    .fil11 {fill:#C82800}
+    .fil10 {fill:#ED2F00}
+    .fil5 {fill:#F2F2F2}
+   .fil3 {fill:url(#id0)}
+    .fil2 {fill:url(#id1)}
+    .fil1 {fill:url(#id2)}
+    .fil4 {fill:url(#id3)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="249.688" y1="60.162" x2="249.688" y2="440.158">
+   <stop offset="0" style="stop-color:#8A8A8A"/>
+   <stop offset="1" style="stop-color:#F8F8F8"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="250.005" y1="457.158" x2="250.005" y2="43.162">
+   <stop offset="0" style="stop-color:#D8D8D8"/>
+   <stop offset="0.290196" style="stop-color:#A4A4A4"/>
+   <stop offset="0.490196" style="stop-color:#F2F2F2"/>
+   <stop offset="0.729412" style="stop-color:#A4A4A4"/>
+   <stop offset="1" style="stop-color:#D8D8D8"/>
+  </linearGradient>
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="461.604" y1="250.16" x2="38.406" y2="250.16">
+   <stop offset="0" style="stop-color:#D8D8D8"/>
+   <stop offset="1" style="stop-color:#6F6F6F"/>
+  </linearGradient>
+  <radialGradient id="id3" gradientUnits="objectBoundingBox" cx="50%" cy="49%" r="49%" fx="50%" fy="49%">
+   <stop offset="0" style="stop-color:#F2F2F2"/>
+   <stop offset="0.831373" style="stop-color:#D8D8D8"/>
+   <stop offset="1" style="stop-color:#B1B1B1"/>
+  </radialGradient>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil1" cx="250" cy="250" r="230"/>
+  <circle class="fil2" cx="250" cy="250" r="225"/>
+  <path class="fil3" d="M250 60c105,0 190,85 190,190 0,105 -85,190 -190,190 -105,0 -190,-85 -190,-190 0,-105 85,-190 190,-190z"/>
+  <circle class="fil4 str1" cx="250" cy="250" r="185"/>
+  <path class="fil5" d="M250 250l-130 75c-13,-23 -20,-49 -20,-75 0,-83 67,-150 150,-150l0 150z"/>
+  <path class="fil6 str2" d="M74 269c2,0 4,-1 7,-1m-4 19c2,0 4,-1 7,-1m-2 20c2,-1 4,-2 6,-3m0 20c2,-1 5,-2 7,-3m12 35c2,-1 4,-2 6,-4m6 19c2,-2 3,-3 5,-5m8 18c2,-2 3,-3 5,-5m10 17c1,-2 2,-4 4,-6m28 25c1,-2 2,-5 3,-7m15 14c0,-3 1,-5 2,-7m16 11c0,-2 1,-4 1,-7m17 10c0,-2 1,-4 1,-7m37 7c-1,-2 -1,-4 -1,-7m19 4c0,-2 -1,-4 -1,-7m19 2c0,-2 -1,-4 -2,-6m20 0c-1,-2 -2,-5 -3,-7m35 -12c-1,-2 -3,-4 -4,-6m19 -6c-2,-2 -3,-3 -5,-5m18 -8c-2,-2 -4,-3 -5,-5m17 -10c-2,-1 -4,-2 -6,-4m25 -28c-3,-1 -5,-2 -7,-3m13 -15c-2,0 -4,-1 -7,-2m12 -16c-2,0 -5,-1 -7,-1m10 -17c-2,0 -5,-1 -7,-1m-190 -196c0,2 1,5 1,7m-19 -4c0,2 1,4 1,7m-19 -2c0,2 1,4 2,6m-20 0c1,3 2,5 3,7m-35 12c1,2 2,4 4,6m-19 6c2,2 3,4 5,5m-18 8c2,2 3,3 5,5m-17 10c2,1 4,3 6,4m-25 28c2,1 5,2 7,3m-14 15c3,0 5,1 7,2m-11 16c2,0 4,1 7,1m-10 17c2,1 4,1 7,1m349 -1c-2,1 -5,1 -7,1m4 -19c-2,0 -5,1 -7,1m2 -19c-2,1 -4,1 -7,2m0 -20c-2,1 -4,2 -6,3m-12 -35c-2,1 -4,3 -6,4m-6 -19c-2,2 -4,4 -5,5m-8 -18c-2,2 -3,4 -5,5m-10 -17c-1,2 -3,4 -4,6m-28 -24c-1,2 -2,4 -3,6m-15 -13c-1,2 -1,4 -2,7m-16 -12c0,2 -1,5 -1,7m-17 -10c-1,2 -1,5 -1,7"/>
+  <path class="fil6 str3" d="M408 341l-23 -13m-44 80l-13 -22m-78 47l0 -26m-91 1l13 -22m-80 -45l23 -13m226 -236l-13 23m80 44l-23 13m-317 78l26 0m-2 -91l23 13m44 -80l13 23m78 -47l0 26m183 156l-27 0"/>
+  <path class="fil7" d="M378 185l-89 56 -16 10 3 0c3,1 -1,17 -4,16l-11 -2 4 11c0,4 1,12 2,18l24 95c1,3 -3,4 -4,1l-26 -94c-2,-6 -6,-14 -7,-17l-4 -15 -25 14c-3,2 -11,-12 -8,-14l12 -8 -18 -5 -85 -27c-3,-1 -1,-9 2,-8l87 19c0,0 24,6 24,6l5 1 -3 -14c-1,-3 1,-6 3,-7 3,0 6,1 7,4l4 16 1 -1c0,0 25,-13 25,-13l93 -49c3,-2 7,5 4,7z"/>
+  <path class="fil8" d="M126 212l87 19c1,1 24,6 24,6l37 11c2,0 2,4 0,8l0 1 -151 -41 0 0c1,-2 2,-4 3,-4z"/>
+  <path class="fil9" d="M274 257c-1,3 -2,7 -4,7l-37 -10c-1,0 -24,-7 -24,-7l-85 -27c-1,0 -1,-2 -1,-4l151 41z"/>
+  <path class="fil9" d="M376 182l-88 56c0,0 -24,15 -25,15l-39 22c-2,1 -5,-2 -7,-6l160 -92c1,2 1,4 -1,5z"/>
+  <path class="fil8" d="M217 269c-2,-3 -3,-7 -1,-8l38 -24c0,0 26,-13 26,-13l92 -49c2,-1 4,0 5,2l0 0 -160 92z"/>
+  <path class="fil10" d="M289 387l-24 -95c-2,-6 -2,-14 -3,-18l-4 -15c3,-3 4,-8 3,-12 -1,-4 -5,-7 -9,-8l-4 -16c-1,-2 -3,-4 -6,-3l45 170c1,-1 2,-2 2,-3z"/>
+  <path class="fil11" d="M287 390c-1,0 -2,0 -2,-2l-27 -94c-2,-6 -5,-14 -6,-17l-5 -16c-3,-1 -7,-4 -8,-8 -1,-4 0,-8 3,-11l-4 -16c-1,-3 1,-6 4,-6l0 0c15,56 30,113 45,170z"/>
+  <circle class="fil12" transform="matrix(0.306255 -0.176816 0.176816 0.306255 250.155 250.08)" r="20"/>
+ </g>
+</svg>

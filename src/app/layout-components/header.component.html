@@ -1,0 +1,34 @@
+<header class="home-header gray-98">
+    <div class="logobox">
+        <a [routerLink]="['/home']">SNIPICONS /</a>
+        <span class="version">Alpha 20170710</span>
+    </div>
+    <div *ngIf="!loggedin" class="user-controll" else userData>
+        <a [routerLink]="['/auth']" data-toggle="tooltip" data-placement="bottom" title="Sign in" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <i class="snipicon-user"></i>
+        </a>
+        </div>
+   
+     <div *ngIf="loggedin" class="user-controll userinfo">
+        <a routerLink="#!" data-toggle="tooltip" data-placement="bottom" title="Sign in" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <i [ngClass]="loggedinInfo.type=='email'? 'snipicon-email' :'snipicon-google'"></i>
+        </a>
+        <span>{{loggedinInfo.name}}</span>
+        </div>
+    
+    <div class="tinynav">
+       
+        <a [routerLink]="['/sicon','project']"  data-toggle="tooltip" data-placement="bottom" title="Collection">
+            <i class="snipicon-collections"></i>
+        </a> 
+        <a [routerLink]="['/sicon','foundry']"  data-toggle="tooltip" data-placement="bottom" title="the foundry">
+            <i class="snipicon-foundry"></i>
+        </a>
+        <a [routerLink]="['/sicon','vault']"  data-toggle="tooltip" data-placement="bottom" title="Documentation">
+            <i class="snipicon-vault"></i>
+        </a>
+        <a (click)="toggleSidebar()">
+            <i class="snipicon-navbars toggle-menu"></i>
+        </a>
+    </div>
+</header>

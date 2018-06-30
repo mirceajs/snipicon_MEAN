@@ -1,0 +1,30 @@
+<nav class="push-menu" [ngClass]="{ 'show ': closed }" role="navigation">
+    <section class="side-footer">
+        <div class="footer-header">
+            <div class="logobox"><a href="#!">SNIPICONS /</a><span class="version">Alpha  20170710</span></div>
+            <div class="footer-close"><a (click)="closeMenu()" class="toggle-menu"><i class="snipicon-close-thin"></i></a></div>
+        </div>
+        <div class="footer-links">
+            <ul class="list-unstyled">
+                <li><a [routerLink]="['/','documents']"  class="snipicon-docs"> Documents</a></li>
+                <li><a href="/DownLoad" class="snipicon-download-drive">Legacy files</a></li>
+                <li><a href="/Account/PricePlans" class="snipicon-price-tag-dlr">Price Plans</a></li>
+                <li><a href="/Home/News" class="snipicon-docs"> Updates</a></li>
+                <li><a href="/About" class="snipicon-docs"> About</a></li>
+                <li><a href="/Support" class="snipicon-chat-wait"> Support</a></li>
+                <li><a href="/Contribute" class="snipicon-contributor"> Contribute</a></li>
+                <li><a href="/TermsofServices" class="snipicon-terms-scale"> Terms of service</a></li>
+                <li><a href="/License" class="snipicon-license"> License</a></li>
+                <li><a href="/PrivacyPolicy" class="snipicon-docs"> Privacy policy</a></li>
+                <li><a href="/AttributionLinks" class="snipicon-attribution-link"> Attribution links</a></li>
+                <li><a (click)="$event.stopPropagation();logout();" class="snipicon-tag"> Logout</a></li>
+            </ul>
+        </div>
+        <div class="socials-footer"> <span>follow our social channels</span> <a href="https://www.facebook.com/Snipicons" target="_blank"><i class="icon-facebook-footer"></i></a> <a href="https://plus.google.com/+Snipicons/" target="_blank"><i class="icon-google-plus-footer"></i></a>            <a href="http://snipicons.tumblr.com/" target="_blank"><i class="icon-tumblr-footer"></i></a> <a href="https://twitter.com/snipicons" target="_blank"><i class="icon-twitter-footer"></i></a>
+            <a href="https://www.behance.net/snipicons" target="_blank"><i class="icon-behance-footer"></i></a><br>
+            <br>
+            <span>Copyright © 2017 - SnipIcons <br>
+        Maximus ratio machina magnifica</span> </div>
+    </section>
+</nav>
+<div class="push-close toggle-menu" (click)="closeMenu()" [ngClass]="{ 'backdropon': closed }" title="Close Menu"></div>

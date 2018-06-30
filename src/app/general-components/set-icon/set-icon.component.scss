@@ -1,0 +1,110 @@
+
+.loadergif{
+    margin-left:80px;
+}
+
+
+.projectHeader span{
+        vertical-align: middle;
+}
+  
+.graphicType{
+  font-size:0.75em !important;
+}
+
+.nomargin{
+    margin:0px !important;
+    padding: 0px !important;
+}
+.preview-sizedemo{
+    border:none !important;
+    padding:5px !important;
+}
+.preview-container{
+    padding : 0px !important;
+}
+.preview-body {
+   
+    padding:5px !important;
+    border-bottom: 3px solid #c3d5e5;
+}
+.projectSetting{
+    background-color: #D4E1EC;
+    height : 35px;
+    border-bottom: 2px solid #99BBDD;
+}
+.uploadbtn {
+    display: inline-block;
+    width: 90px !important;
+    height: 25px !important;
+    padding:5px;
+    font-size: 12px;
+    background-color: lightgreen;
+    color :#99A7EF;
+    font-weight: bold;
+    cursor:pointer;
+    line-height: 15px;
+}
+.preview-header{
+    background-color: #C3D5E5;
+    padding:0px 10px 5px 15px;
+}
+.preview-footer{
+        margin: 10px 0px 10px 0px;
+}
+.preview-footer span{
+   background-color: #C3D5E5;
+   margin: 10px;
+   padding:5px;
+}
+
+.search-result-container
+{
+    padding: 0px !important;
+    
+}
+
+:host ::ng-deep .mat-input-element
+{
+    padding:5px !important;
+    border-bottom: 4px solid #D4E1EC !important;
+}
+
+:host ::ng-deep .mat-form-field-underline{
+    border-bottom: 4px solid #D4E1EC !important;
+}
+:host ::ng-deep  .mat-form-field{
+    width:100%;
+}
+.setHeader{
+
+    background-color: #D4E1EC;
+    height : 35px;
+    border-bottom: 2px solid #99BBDD;
+   
+}
+
+.tabSelected{
+   
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.setHeader span {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: -webkit-baseline-middle;
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+}
+
+.tab{
+    margin-top:20px
+}
+

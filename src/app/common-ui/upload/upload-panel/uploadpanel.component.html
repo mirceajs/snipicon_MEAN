@@ -1,0 +1,127 @@
+<div class="uploadPanel preview-container"  style="margin-bottom:15px" id="panel" #panel>
+  
+<div class="uploadheader">
+  <div class="row">
+<div class="col-md-11 form-group">
+ <div class="row">
+ <div class="col-md-4">
+  <input type="text" class="form-control" [(ngModel)]="iconName" placeholder="icon name">
+ </div>
+</div>
+</div>
+<div class="col-md-1">
+  <span (click)="hidePanel()"><i class="snipicon-close-thin aside-toggle"></i></span>
+</div> </div> 
+ </div>
+<div class="uploadbody">
+  <div class="row">
+      <div [hidden]="!loadpanel" class="col loadergif">
+        <div class="d-flex justify-content-center">
+          <mat-spinner [strokeWidth]="2" [diameter]="30"></mat-spinner>
+          </div>
+          </div>
+   <!-- <div class="col-md-7">
+         <div class="sixpack-preview-box container">
+                <ul class="list-inline row">
+         	        <li *ngFor="let gliph of gliphicon;let i = index" class="col-lg nomargin graphictypes-selector">
+                   <label class="iconHeader"><b>{{gliph.graphicsType}}</b></label>
+                   <upload-data  [gliph]="gliph" (click)="iconclicked(gliph)" [iconId]="gliph.graphicsType" (setPrefix)="setRegId($event)" #iconUpload></upload-data>
+                  </li>
+                </ul>
+              </div>
+    </div>
+    <div class="col-md-5">
+     <div class="preview-sizedemo">
+        <ul>
+          <li *ngFor="let szclass of icnSizes" class="preview preview-selector">
+          <img *ngIf="seltwin && seltwin.source" [src]="transform(seltwin.source)" [class]="szclass">
+          </li>
+        <li *ngIf="seltwin && seltwin.source" class="preview-selector px-1">
+        <i class="snipicon-bin-red" (click)="deleteIcon(seltwin)"></i>
+        </li>
+        </ul>
+      </div>
+    </div>-->
+    	<div class="preview-body">
+
+        <div class="preview-sixpack">
+          <ul>
+              <li *ngFor="let gliph of gliphicon;let i = index" class="preview-selector">
+                   <span class="previewstyle">{{gliph.graphicsType}}</span>
+                  <!-- <img  [src]="transform(gliph.source)"  (click)="iconclicked(gliph)">-->
+                   <upload-data  [gliph]="gliph" (click)="iconclicked(gliph)" [iconId]="gliph.graphicsType" (setPrefix)="setRegId($event)" #iconUpload></upload-data>
+                   </li>
+            </ul>
+       </div>
+          <div class="preview-sizedemo">
+            <ul>
+               <li *ngFor="let szclass of icnSizes" class="preview preview-selector">
+                 <img *ngIf="seltwin && seltwin.source" [src]="transform(seltwin.source)" [class]="szclass">
+               </li>
+                 <li *ngIf="seltwin && seltwin.source" class="preview-selector px-1">
+        <i class="snipicon-bin-red" (click)="deleteIcon(seltwin)"></i>
+        </li>
+            </ul>
+          </div>
+        </div>
+    <div class="col-md-8">
+       
+      </div>
+    </div>
+</div>
+<div class="uploadfooter">
+  <div class="row">
+<div class="col-md-8">
+  <div class="row">
+    <div class="col-md-1">
+   <label>Tags:</label> 
+    </div>
+  <div class="nomargin col-md-10">
+  <tag-input #iconTags
+    placeholder="Add an tag"
+    [(ngModel)]="Itags"
+    delimiterCode="188">
+  </tag-input>
+  </div>
+  </div>
+</div>
+<div class="col-md-4"  id="upload">
+  <button  [disabled]= "!iconName.length > 0 || loading" class="btn btn-sm btn-success" (click)="save('pending')" >SEND TO REVIEW</button>
+  <button  [disabled]= "!iconName.length > 0 || loading" class="btn btn-sm btn-danger" (click)="save('working')">SAVE</button>
+  <button  class="btn btn-sm btn-primary" (click)="duplicate()">DUPLICATE</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<!--<div class="preview-container" #panel>
+    	<div class="preview-body">
+
+        <div class="preview-sixpack">
+          <ul>
+              <li *ngFor="let gliph of gliphicon;let i = index" class="preview-selector">
+                   <span class="previewstyle">{{gliph.graphicsType}}</span>
+                   <img  [src]="transform(gliph.source)"  (click)="iconclicked(gliph)">
+                   </li>
+            </ul>
+       </div>
+          <div class="preview-sizedemo">
+            <ul>
+               <li *ngFor="let szclass of icnSizes" class="preview preview-selector">
+                 <img *ngIf="seltwin && seltwin.source" [src]="transform(seltwin.source)" [class]="szclass">
+               </li>
+            </ul>
+          </div>
+        </div>
+        <div class="preview-datacontainer">
+	     	<div class="tag">
+        <span href="#" *ngFor="let tg of Itags" style="padding-right:10px;">{{tg}}</span>
+        </div>
+	    	<div class="author">
+		    <i class="user-controll"></i> BY <a href="#">insspirito</a>
+		    </div>
+    	</div>
+          </div>-->
+ 

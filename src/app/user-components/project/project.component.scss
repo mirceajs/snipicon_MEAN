@@ -1,0 +1,26 @@
+.snipProject span
+{
+ width : 50px;
+ color:green;
+}
+
+ .search-result-container {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 5px 10px;
+    margin: auto 10px;
+    min-width:100%
+  }
+figure i {
+  height:48px !important;
+  width: 48px !important;
+  padding-bottom: 5px!important;
+  cursor: pointer;
+}
+
+figure span{
+    word-wrap: break-word;
+    width: 50px;
+    margin-top: -5px !important;
+    text-align: left;
+
+}

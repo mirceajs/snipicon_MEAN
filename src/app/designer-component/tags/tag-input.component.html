@@ -1,0 +1,5 @@
+<tag-input-item  [text]="tag" [index]="index" [selected]="selectedTag === index"  *ngFor="let tag of tagsList; let index = index" (tagRemoved)="_removeTag($event)">
+  </tag-input-item>
+  <input [(ngModel)]="inputValue" class="ng2-tag-input-field" type="text" [placeholder]="placeholder" 
+    (paste)="inputPaste($event)" (keydown)="inputChanged($event)" (blur)="inputBlurred($event)"
+    (focus)="inputFocused()" #tagInputRef >

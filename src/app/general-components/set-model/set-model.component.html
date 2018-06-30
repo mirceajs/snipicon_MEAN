@@ -1,0 +1,206 @@
+<div class="projectPanel" #setpanel>
+<div class="setHeader row">
+    <div class="col-md-6">
+    <span (click)="setSelection(0)" [ngClass]="selectedIndex==0 ? 'tabSelected' :''"><i class="snipicon-settings"></i></span>
+    <span (click)="setSelection(1)" [ngClass]="selectedIndex==1 ? 'tabSelected' :''"><i class="snipicon-palette-edit"></i></span>
+    </div>
+    <div class="col-md-6 pull-right">
+    <span (click)="setSelection(2)" [ngClass]="selectedIndex==2 ? 'tabSelected' :''" ><i class="snipicon-fill"></i></span>
+    <span (click)="setSelection(3)" [ngClass]="selectedIndex==3 ? 'tabSelected' :''" ><i class="snipicon-pen-tip"></i></span>
+    <span (click)="setSelection(4)" [ngClass]="selectedIndex==4 ? 'tabSelected' :''" ><i class="snipicon-gradient-stop"></i></span>
+    </div>
+    </div>
+<div #tab1 class="tab" *ngIf="selectedIndex==0">
+<div class="col-md-12 ">
+     <form class="example-form" [formGroup]="form" (ngSubmit)="save()">
+          <mat-form-field class="example-full-width">
+       <input type="text" matInput placeholder="Set name"  formControlName="set">
+          </mat-form-field>
+         <span style="margin-top:30px">
+          <label>Set graphics type</label></span><br/>
+          <mat-form-field class="example-full-width">
+          <mat-select placeholder="select a project" formControlName="type">
+           <mat-option *ngFor="let type of SetTypes" [value]="type">
+                                     {{ type }}
+           </mat-option>
+           </mat-select>
+          </mat-form-field>
+     </form>
+   
+</div>
+<div style="margin-top:40px">
+</div>
+<!--<div class="col-md-12 ">
+     <span *ngFor="let color of colorStops;let index = index">
+            <input type="color" [ngStyle]="{'background-color':color}" (change)="generatePallet(colorStops)" [(ngModel)]="colorStops[index]" value="{{color}}">
+           <!-- <span *ngFor="let g of palletGrad[k];let i = index" [ngClass]= "'snip_cl'+(k+1)+'_s'+(i+1)+'_back'" style="width:5px;height:5px;" >{{g[i]?.r}}</span>-->
+    <!--  </span>
+    </div>-->
+<div style="margin-top:80px">
+</div> 
+ <div *ngIf="loading" class="col loadergif">
+        <div class="col-md-12 justify-content-center">
+          <mat-spinner [strokeWidth]="5" [diameter]="40"></mat-spinner>
+          </div>
+          </div>    
+<div class="pull-right col-md-9">
+   
+<button (click)="closePanel()" class="btn btn-sm btn-default">CANCEL</button>
+<button class="btn btn-sm btn-success" (click)="save()" >CREATE & SAVE</button>
+</div>
+
+</div>
+</div>
+<div #tab2 class="tab" *ngIf="selectedIndex==1" style="margin-left:5px">
+    <div class="col-md-12 row">
+      <div class="col-md-12">
+        <label><b>Set master palette</b></label>
+      </div> <br/>
+     
+     <div class="col-md-3 nomargin" style="margin-top:-10px !important;margin-left:-2px !important" *ngFor="let color of colorStops;let index = index">
+       
+            <input type="color" (ngModelChange)="colorChanged($event,index)" [ngStyle]="{'background-color':color}" style="color:white" [(ngModel)]="colorStops[index]" [value]="kjo">
+         <br>
+          <div *ngFor="let g of palletGrad[index];let i = index" [ngStyle]="{'background-color':rgb(g.r,g.g,g.b)}" style="width:3.5px;height:15px;display:inline-block;" >
+            </div>  
+                   
+           
+      </div>
+          <div class="col-md-12 margin-zero" style="margin-top:30px !important">
+           <mat-checkbox>Inverse gradient (swap endpoints)</mat-checkbox>
+           </div>
+          <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-saturation"></i></span> 
+            <mat-slider (change)="satChanged($event.value)" thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-lightness"></i></span> 
+            <mat-slider  thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-gradient-step"></i></span> 
+            <mat-slider  invert thumbLabel  tickInterval="1"  min="1" max="18"></mat-slider>
+          
+            </div>
+    </div>
+    </div>
+  <div #tab3 class="tab" *ngIf="selectedIndex==2" style="margin-left:5px">
+    <div class="col-md-12 row">
+      <div class="col-md-12">
+        <label><b>Fill palette</b></label>
+      </div> <br/>
+     
+     <div class="col-md-3 nomargin" style="margin-top:-10px !important;margin-left:-2px !important" *ngFor="let color of colorStops;let index = index">
+       
+            <input type="color" (ngModelChange)="colorChanged($event,index)" [ngStyle]="{'background-color':color}" style="color:white" [(ngModel)]="colorStops[index]" [value]="kjo">
+         <br>
+          <div *ngFor="let g of palletGrad[index];let i = index" [ngStyle]="{'background-color':rgb(g.r,g.g,g.b)}" style="width:3.5px;height:15px;display:inline-block;" >
+            </div>  
+                   
+           
+      </div>
+          <div class="col-md-12 margin-zero" style="margin-top:30px !important">
+           <mat-checkbox>Inverse gradient (swap endpoints)</mat-checkbox>
+           </div>
+          <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-saturation"></i></span> 
+            <mat-slider (change)="satChanged($event.value)" thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-lightness"></i></span> 
+            <mat-slider  thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-gradient-step"></i></span> 
+            <mat-slider  invert thumbLabel  tickInterval="1"  min="1" max="18"></mat-slider>
+          
+            </div>
+    </div>
+    </div>
+   <div #tab4 class="tab" *ngIf="selectedIndex==3" style="margin-left:5px">
+    <div class="col-md-12 row">
+      <div class="col-md-12">
+        <label><b>Stroke palette</b></label>
+      </div> <br/>
+     
+     <div class="col-md-3 nomargin" style="margin-top:-10px !important;margin-left:-2px !important" *ngFor="let color of colorStops;let index = index">
+       
+            <input type="color" (ngModelChange)="colorChanged($event,index)" [ngStyle]="{'background-color':color}" style="color:white" [(ngModel)]="colorStops[index]" [value]="kjo">
+         <br>
+          <div *ngFor="let g of palletGrad[index];let i = index" [ngStyle]="{'background-color':rgb(g.r,g.g,g.b)}" style="width:3.5px;height:15px;display:inline-block;" >
+            </div>  
+                   
+           
+      </div>
+          <div class="col-md-12 margin-zero" style="margin-top:30px !important">
+           <mat-checkbox>Inverse gradient (swap endpoints)</mat-checkbox>
+           </div>
+          <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-saturation"></i></span> 
+            <mat-slider (change)="satChanged($event.value)"  thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-lightness"></i></span> 
+            <mat-slider  thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-gradient-step"></i></span> 
+            <mat-slider  invert thumbLabel  tickInterval="1"  min="1" max="18"></mat-slider>
+          
+            </div>
+    </div>
+    </div>
+    <div #tab5 class="tab" *ngIf="selectedIndex==4" style="margin-left:5px">
+    <div class="col-md-12 row">
+      <div class="col-md-12">
+        <label><b>Gradient stops</b></label>
+      </div> <br/>
+     
+     <div class="col-md-3 nomargin" style="margin-top:-10px !important;margin-left:-2px !important" *ngFor="let color of colorStops;let index = index">
+       
+            <input type="color" (ngModelChange)="colorChanged($event,index)" [ngStyle]="{'background-color':color}" style="color:white" [(ngModel)]="colorStops[index]" [value]="kjo">
+         <br>
+          <div *ngFor="let g of palletGrad[index];let i = index" [ngStyle]="{'background-color':rgb(g.r,g.g,g.b)}" style="width:3.5px;height:15px;display:inline-block;" >
+            </div>  
+                   
+           
+      </div>
+          <div class="col-md-12 margin-zero" style="margin-top:30px !important">
+           <mat-checkbox>Inverse gradient (swap endpoints)</mat-checkbox>
+           </div>
+          <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-saturation"></i></span> 
+            <mat-slider (change)="satChanged($event.value)" thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-lightness"></i></span> 
+            <mat-slider  thumbLabel  tickInterval="1"  min="0" max="100"></mat-slider>
+          
+            </div>
+            <div class="col-md-12 margin-zero">
+            <span><i class="snipicon-gradient-step"></i></span> 
+            <mat-slider  invert thumbLabel  tickInterval="1"  min="1" max="18"></mat-slider>
+          
+            </div>
+    </div>
+    </div>
+<footer  *ngIf="selectedIndex==0" [ngStyle]="{'width': setpanel.offsetWidth +'px'}">
+  
+     <div class="dashed-border" width="340px">  <!-- [ngStyle]="{'width': (setpanel.offsetWidth -20) +'px'}">-->
+      </div><span><i class="snipicon-zoom-out "></i></span> 
+      <mat-slider  thumbLabel  tickInterval="1"  min="10" max="80"></mat-slider>
+      <span><i class="snipicon-zoom-in "></i></span> 
+      <div class="dashed-border" width="340px">  <!--  [ngStyle]="{'width': (setpanel.offsetWidth -20) +'px'}">-->
+      </div>  
+     <div class="row"> 
+    <div class="col" ><i class="snipicon-bin"></i></div>
+   <div class="col align-items-end"><i class="snipicon-copy-set"></i></div> 
+   </div>
+</footer>

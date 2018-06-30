@@ -1,0 +1,44 @@
+<div #foundry class="foundry">
+      
+<!--<div class="col uploadbtn" (click)="openPanel()">
+        <span class="snipicon snipicon-foundry"></span>
+        </div>-->
+<div class="row" style="margin:0px">
+        <div *ngIf="loading" class="col loadergif">
+        <div class="d-flex justify-content-center">
+          <mat-spinner [strokeWidth]="5" [diameter]="80"></mat-spinner>
+          </div>
+          </div>
+ <div class="search-result-container">
+         <upload-panel  *ngIf="selectedindex == -1" (hidePanelEvent)="hidePanel()" (uploadComplete)="uploadcompleted()" #uploadPanel></upload-panel>
+         <figure class="btn1">
+                 <div class ="uploadbtn" (click)="openPanel()">
+        <span class="snipicon snipicon-foundry"></span>
+        </div>
+         </figure>
+     <!--   <div *ngFor ="let i of viewPortItems">{{i}}</div>-->
+ 
+ <ng-container *ngFor ="let ic of IconList;let i = index">
+ <figure [ngClass]="i==selectedindex ? 'activeiconbox' :''" (click)="iconClicked(ic,i)">
+ <sup >{{ic.count}}</sup>         
+ <div  [innerHTML]="transformHTML(ic.source)">
+ </div>
+ </figure>
+<ng-container #uploadblock>
+  <upload-panel  *ngIf="i==selectedindex" (hidePanelEvent)="hidePanel($event)" (uploadComplete)="uploadcompleted()" #uploadPanel></upload-panel>
+ </ng-container>
+
+  </ng-container>
+
+
+ </div>
+<!--<div class="svgCont" (click)="iconClicked(ic)" *ngFor ="let ic of IconList">
+<div  [innerHTML]="transformHTML(ic.source)">
+</div>
+</div>
+
+</div>-->
+<!--<upload-panel (uploadComplete)="uploadcompleted()" #uploadPanel></upload-panel>-->
+<br/>
+</div>
+</div>

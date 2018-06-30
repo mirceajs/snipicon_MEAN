@@ -1,0 +1,53 @@
+<div id="login" class="login-container">
+    <div class="login-header" ng-if>
+        {{ title }} <br> <img class="snipicon64" src="/assets/media/email-signinup.svg">
+        <!-- will change based on the page it is in -->
+    </div>
+    <div class="login-body container">
+        <div class="login-flow">
+
+          <form class="example-form" [formGroup]="loginForm" (ngSubmit)="register(loginForm.value, action)">
+          <mat-form-field class="example-full-width">
+           <input type="email" matInput placeholder="Email" formControlName="email">
+           <mat-error *ngIf="loginForm.get('email').hasError('email') && !loginForm.get('email').hasError('required')">
+           Please enter a valid email address
+           </mat-error>
+          <mat-error *ngIf="loginForm.get('email').hasError('required')">
+           Email is <strong>required</strong>
+          </mat-error>
+         
+          </mat-form-field>
+           <mat-form-field class="example-full-width">
+           <input type ="password" matInput placeholder="Password" formControlName="password">
+           <mat-error *ngIf="loginForm.get('password').hasError('minlength') && !loginForm.get('password').hasError('required') && action =='signup'">
+           Password should be minimum 8 characters long
+           </mat-error>
+          <mat-error *ngIf="loginForm.get('password').hasError('required')">
+           Password Field cannot be empty
+          </mat-error>
+         </mat-form-field>
+         <div class="row">
+             <div class="col" style="margin-bottom:20px">
+                
+                <div *ngIf="action =='signin'" class="col text-left" style="margin-top:10px">
+                        <a [routerLink]="[ '/auth/forgot']">Lost Password?</a>
+                    </div>
+                      <div class="col text-right ">
+                        <button type="submit" class="btn btn-primary pull-xs-right" [disabled]="loginForm.invalid">{{ title }}</button>
+                    </div>
+                      <div *ngIf="action =='signin'" class="col text-left">
+                        <a [routerLink]="[ '/auth/signup']">Register</a>
+                    </div>
+                  </div>
+                </div>
+        </form>
+        </div>
+        <hr>
+        <p class="text-center ">By using application you agree to our<br>
+            <a href="# ">Terms of service </a> &amp; <a href="# ">Privacy policy</a>
+        </p>
+    </div>
+    <div>
+
+    </div>
+</div>
